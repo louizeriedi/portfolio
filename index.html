@@ -3,442 +3,483 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Product Designer Portfolio - Creating meaningful digital experiences through user-centered design">
-    <meta name="keywords" content="product designer, UX designer, UI designer, portfolio, design, user experience">
+    <title>Portfolio - Product Designer</title>
+    <meta name="description" content="Professional portfolio showcasing product design projects and case studies">
+    <meta name="keywords" content="product design, UX, UI, portfolio, case studies">
     <meta name="author" content="Your Name">
-    <meta property="og:title" content="Product Designer Portfolio">
-    <meta property="og:description" content="Professional Product Designer creating meaningful digital experiences">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourportfolio.com">
-    <title>Your Name - Product Designer</title>
+    <meta property="og:url" content="https://yourportfolio.com/">
+    <meta property="og:title" content="Portfolio - Product Designer">
+    <meta property="og:description" content="Professional portfolio showcasing product design projects and case studies">
+    <meta property="og:image" content="https://yourportfolio.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourportfolio.com/">
+    <meta property="twitter:title" content="Portfolio - Product Designer">
+    <meta property="twitter:description" content="Professional portfolio showcasing product design projects and case studies">
+    <meta property="twitter:image" content="https://yourportfolio.com/og-image.jpg">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body class="light-mode">
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home" class="logo">YN</a>
+                <a href="#" class="logo">Your Name</a>
             </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link" data-lang="nav-home">Home</a>
-                <a href="#about" class="nav-link" data-lang="nav-about">About</a>
-                <a href="#skills" class="nav-link" data-lang="nav-skills">Skills</a>
-                <a href="#projects" class="nav-link" data-lang="nav-projects">Projects</a>
-                <a href="#contact" class="nav-link" data-lang="nav-contact">Contact</a>
-                <div class="nav-controls">
-                    <button class="language-toggle" id="language-toggle" aria-label="Toggle language">
-                        <span data-lang="lang-en">EN</span>
-                        <span data-lang="lang-pt" style="display: none;">PT</span>
-                    </button>
-                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="5"></circle>
-                            <line x1="12" y1="1" x2="12" y2="3"></line>
-                            <line x1="12" y1="21" x2="12" y2="23"></line>
-                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                            <line x1="1" y1="12" x2="3" y2="12"></line>
-                            <line x1="21" y1="12" x2="23" y2="12"></line>
-                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                        </svg>
-                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                        </svg>
-                    </button>
-                </div>
+            
+            <div class="nav-menu">
+                <a href="#" class="nav-link active" data-lang="nav-home">Home</a>
+                <a href="#" class="nav-link" data-lang="nav-about">About</a>
+                <a href="#" class="nav-link" data-lang="nav-contact">Contact</a>
+                
+                <!-- Language Toggle -->
+                <button id="language-toggle" class="nav-link language-toggle" aria-label="Toggle language">
+                    <span data-lang="lang-en">EN</span>
+                    <span data-lang="lang-pt" style="display: none;">PT</span>
+                </button>
+                
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="nav-link theme-toggle" aria-label="Toggle theme">
+                    <svg class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                </button>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="hero-greeting" data-lang="hero-greeting">Hello, I'm</span>
-                    <span class="hero-name">Your Name</span>
-                    <span class="hero-tagline" data-lang="hero-tagline">Product Designer</span>
-                </h1>
-                <p class="hero-description" data-lang="hero-description">
-                    Creating meaningful digital experiences through user-centered design and innovative solutions.
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary" data-lang="hero-cta-primary">View My Work</a>
-                    <a href="#about" class="btn btn-secondary" data-lang="hero-cta-secondary">Learn More</a>
-                </div>
+    <!-- Main Content - Three Column Grid -->
+    <main class="main-grid">
+        <!-- Column 1: Project Cards List -->
+        <section class="projects-column">
+            <div class="projects-header">
+                <h1 class="projects-title" data-lang="projects-title">Projects</h1>
+                <p class="projects-subtitle" data-lang="projects-subtitle">Selected work and case studies</p>
             </div>
-
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-lang="about-title">About Me</h2>
-                <p class="section-subtitle" data-lang="about-subtitle">Passionate about creating user-centered digital experiences</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-description" data-lang="about-description">
-                        I'm a product designer with over 5 years of experience crafting digital experiences that users love. 
-                        My approach combines user research, strategic thinking, and creative problem-solving to deliver 
-                        solutions that not only look great but also solve real user problems.
-                    </p>
-                    <p class="about-description" data-lang="about-description-2">
-                        I believe in the power of design to create positive change and improve people's lives. 
-                        Every project I work on is an opportunity to learn, grow, and make a meaningful impact.
-                    </p>
-                    <div class="about-actions">
-                        <a href="resume.pdf" class="btn btn-outline" download data-lang="about-download-resume">
-                            Download Resume
-                        </a>
-                    </div>
-                </div>
-                <div class="about-timeline">
-                    <h3 class="timeline-title" data-lang="about-experience">Experience</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h4 class="timeline-role">Senior Product Designer</h4>
-                                <p class="timeline-company">Tech Company • 2022 - Present</p>
-                                <p class="timeline-description" data-lang="timeline-1">Leading design initiatives for web and mobile applications</p>
-                            </div>
+            
+            <div class="projects-list">
+                <article class="project-card active" data-project="project-1">
+                    <div class="project-card-content">
+                        <h3 class="project-card-title" data-lang="project-1-title">E-commerce Redesign</h3>
+                        <p class="project-card-description" data-lang="project-1-description">Complete redesign of an e-commerce platform focusing on user experience and conversion optimization.</p>
+                        <div class="project-card-tags">
+                            <span class="project-tag" data-lang="tag-ux">UX Design</span>
+                            <span class="project-tag" data-lang="tag-ui">UI Design</span>
+                            <span class="project-tag" data-lang="tag-research">Research</span>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h4 class="timeline-role">UX Designer</h4>
-                                <p class="timeline-company">Startup • 2020 - 2022</p>
-                                <p class="timeline-description" data-lang="timeline-2">Designed user experiences for SaaS products</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h4 class="timeline-role">UI Designer</h4>
-                                <p class="timeline-company">Agency • 2019 - 2020</p>
-                                <p class="timeline-description" data-lang="timeline-3">Created visual designs for various client projects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-lang="skills-title">Skills & Tools</h2>
-                <p class="section-subtitle" data-lang="skills-subtitle">Technologies and methodologies I work with</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title" data-lang="skills-design-tools">Design Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">🎨</div>
-                            <span class="skill-name">Figma</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">✏️</div>
-                            <span class="skill-name">Sketch</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">📱</div>
-                            <span class="skill-name">Adobe XD</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🖼️</div>
-                            <span class="skill-name">Photoshop</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🎬</div>
-                            <span class="skill-name">After Effects</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title" data-lang="skills-ux">UX Skills</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">🔍</div>
-                            <span class="skill-name">User Research</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">📊</div>
-                            <span class="skill-name">Usability Testing</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🗺️</div>
-                            <span class="skill-name">Information Architecture</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">📝</div>
-                            <span class="skill-name">Wireframing</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🎯</div>
-                            <span class="skill-name">Prototyping</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title" data-lang="skills-soft">Soft Skills</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">🤝</div>
-                            <span class="skill-name">Collaboration</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">💬</div>
-                            <span class="skill-name">Communication</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🎯</div>
-                            <span class="skill-name">Problem Solving</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">⚡</div>
-                            <span class="skill-name">Adaptability</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">📈</div>
-                            <span class="skill-name">Leadership</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-lang="projects-title">Featured Projects</h2>
-                <p class="section-subtitle" data-lang="projects-subtitle">A selection of my recent work</p>
-            </div>
-            <div class="projects-grid">
-                <article class="project-card" data-project="1">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <svg width="400" height="250" viewBox="0 0 400 250" fill="none">
-                                <rect width="400" height="250" fill="var(--border-color)"/>
-                                <rect x="50" y="50" width="300" height="150" fill="var(--bg-tertiary)"/>
-                                <circle cx="200" cy="125" r="30" fill="var(--text-muted)"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">E-commerce Mobile App</h3>
-                        <p class="project-description" data-lang="project-1-description">
-                            Redesigned the mobile shopping experience for a major retailer, improving conversion rates by 35%.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">Mobile Design</span>
-                            <span class="project-tag">UX Research</span>
-                            <span class="project-tag">Prototyping</span>
-                        </div>
-                        <button class="project-link" data-lang="project-view-case">View Case Study</button>
                     </div>
                 </article>
 
-                <article class="project-card" data-project="2">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <svg width="400" height="250" viewBox="0 0 400 250" fill="none">
-                                <rect width="400" height="250" fill="var(--border-color)"/>
-                                <rect x="50" y="50" width="300" height="150" fill="var(--bg-tertiary)"/>
-                                <rect x="100" y="100" width="200" height="50" fill="var(--text-muted)"/>
-                            </svg>
+                <article class="project-card" data-project="project-2">
+                    <div class="project-card-content">
+                        <h3 class="project-card-title" data-lang="project-2-title">Mobile Banking App</h3>
+                        <p class="project-card-description" data-lang="project-2-description">Design of a modern mobile banking application with focus on security and ease of use.</p>
+                        <div class="project-card-tags">
+                            <span class="project-tag" data-lang="tag-mobile">Mobile</span>
+                            <span class="project-tag" data-lang="tag-fintech">Fintech</span>
+                            <span class="project-tag" data-lang="tag-prototyping">Prototyping</span>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">SaaS Dashboard</h3>
-                        <p class="project-description" data-lang="project-2-description">
-                            Created an intuitive dashboard for a B2B SaaS platform, reducing user onboarding time by 50%.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">Web Design</span>
-                            <span class="project-tag">Data Visualization</span>
-                            <span class="project-tag">User Testing</span>
-                        </div>
-                        <button class="project-link" data-lang="project-view-case">View Case Study</button>
                     </div>
                 </article>
 
-                <article class="project-card" data-project="3">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <svg width="400" height="250" viewBox="0 0 400 250" fill="none">
-                                <rect width="400" height="250" fill="var(--border-color)"/>
-                                <rect x="50" y="50" width="300" height="150" fill="var(--bg-tertiary)"/>
-                                <polygon points="200,50 250,150 150,150" fill="var(--text-muted)"/>
-                            </svg>
+                <article class="project-card" data-project="project-3">
+                    <div class="project-card-content">
+                        <h3 class="project-card-title" data-lang="project-3-title">Healthcare Dashboard</h3>
+                        <p class="project-card-description" data-lang="project-3-description">Comprehensive dashboard for healthcare professionals to manage patient data and analytics.</p>
+                        <div class="project-card-tags">
+                            <span class="project-tag" data-lang="tag-dashboard">Dashboard</span>
+                            <span class="project-tag" data-lang="tag-healthcare">Healthcare</span>
+                            <span class="project-tag" data-lang="tag-analytics">Analytics</span>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Fintech App Redesign</h3>
-                        <p class="project-description" data-lang="project-3-description">
-                            Modernized a financial app's interface, improving user engagement and trust scores significantly.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">App Design</span>
-                            <span class="project-tag">Brand Identity</span>
-                            <span class="project-tag">Accessibility</span>
+                </article>
+
+                <article class="project-card" data-project="project-4">
+                    <div class="project-card-content">
+                        <h3 class="project-card-title" data-lang="project-4-title">Travel Booking Platform</h3>
+                        <p class="project-card-description" data-lang="project-4-description">End-to-end design of a travel booking platform with advanced search and booking features.</p>
+                        <div class="project-card-tags">
+                            <span class="project-tag" data-lang="tag-travel">Travel</span>
+                            <span class="project-tag" data-lang="tag-booking">Booking</span>
+                            <span class="project-tag" data-lang="tag-responsive">Responsive</span>
                         </div>
-                        <button class="project-link" data-lang="project-view-case">View Case Study</button>
+                    </div>
+                </article>
+
+                <article class="project-card" data-project="project-5">
+                    <div class="project-card-content">
+                        <h3 class="project-card-title" data-lang="project-5-title">Educational Platform</h3>
+                        <p class="project-card-description" data-lang="project-5-description">Design system and user interface for an online learning platform with interactive features.</p>
+                        <div class="project-card-tags">
+                            <span class="project-tag" data-lang="tag-education">Education</span>
+                            <span class="project-tag" data-lang="tag-design-system">Design System</span>
+                            <span class="project-tag" data-lang="tag-interactive">Interactive</span>
+                        </div>
                     </div>
                 </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-lang="contact-title">Get In Touch</h2>
-                <p class="section-subtitle" data-lang="contact-subtitle">Let's work together on your next project</p>
+        <!-- Column 2: Fixed Large Image -->
+        <section class="image-column">
+            <div class="project-image-container">
+                <div class="project-image active" id="project-1-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZdgStDJDF7kIVJjixo3DHHud-6mgwqpw5KQ&s" alt="E-commerce Redesign Project" class="project-image-content">
+                </div>
+                <div class="project-image" id="project-2-image">
+                    <svg class="project-placeholder" width="100%" height="100%" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="600" fill="var(--bg-tertiary)"/>
+                        <rect x="150" y="100" width="500" height="400" fill="var(--border-color)" rx="12"/>
+                        <rect x="200" y="150" width="400" height="60" fill="var(--text-muted)" rx="6"/>
+                        <rect x="200" y="230" width="300" height="40" fill="var(--text-muted)" rx="4"/>
+                        <rect x="200" y="290" width="250" height="40" fill="var(--text-muted)" rx="4"/>
+                        <circle cx="500" cy="350" r="30" fill="var(--text-muted)"/>
+                    </svg>
+                </div>
+                <div class="project-image" id="project-3-image">
+                    <svg class="project-placeholder" width="100%" height="100%" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="600" fill="var(--bg-tertiary)"/>
+                        <rect x="50" y="50" width="700" height="500" fill="var(--border-color)" rx="8"/>
+                        <rect x="100" y="100" width="600" height="80" fill="var(--text-muted)" rx="4"/>
+                        <rect x="100" y="200" width="280" height="120" fill="var(--text-muted)" rx="4"/>
+                        <rect x="420" y="200" width="280" height="120" fill="var(--text-muted)" rx="4"/>
+                        <rect x="100" y="340" width="600" height="80" fill="var(--text-muted)" rx="4"/>
+                        <rect x="100" y="440" width="600" height="80" fill="var(--text-muted)" rx="4"/>
+                    </svg>
+                </div>
+                <div class="project-image" id="project-4-image">
+                    <svg class="project-placeholder" width="100%" height="100%" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="600" fill="var(--bg-tertiary)"/>
+                        <rect x="100" y="100" width="600" height="400" fill="var(--border-color)" rx="8"/>
+                        <rect x="150" y="150" width="500" height="60" fill="var(--text-muted)" rx="6"/>
+                        <rect x="150" y="230" width="200" height="120" fill="var(--text-muted)" rx="4"/>
+                        <rect x="380" y="230" width="270" height="120" fill="var(--text-muted)" rx="4"/>
+                        <rect x="150" y="370" width="500" height="60" fill="var(--text-muted)" rx="4"/>
+                    </svg>
+                </div>
+                <div class="project-image" id="project-5-image">
+                    <svg class="project-placeholder" width="100%" height="100%" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="600" fill="var(--bg-tertiary)"/>
+                        <rect x="100" y="100" width="600" height="400" fill="var(--border-color)" rx="8"/>
+                        <rect x="150" y="150" width="500" height="80" fill="var(--text-muted)" rx="6"/>
+                        <rect x="150" y="250" width="150" height="100" fill="var(--text-muted)" rx="4"/>
+                        <rect x="320" y="250" width="150" height="100" fill="var(--text-muted)" rx="4"/>
+                        <rect x="490" y="250" width="160" height="100" fill="var(--text-muted)" rx="4"/>
+                        <rect x="150" y="370" width="500" height="80" fill="var(--text-muted)" rx="4"/>
+                    </svg>
+                </div>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3 class="contact-info-title" data-lang="contact-info-title">Let's Connect</h3>
-                    <p class="contact-description" data-lang="contact-description">
-                        I'm always interested in new opportunities and exciting projects. 
-                        Whether you have a question or just want to say hi, feel free to reach out!
+        </section>
+
+        <!-- Column 3: Project Description -->
+        <section class="description-column">
+            <div class="project-description active" id="project-1-description">
+                <div class="description-header">
+                    <h2 class="description-title" data-lang="project-1-title">E-commerce Redesign</h2>
+                    <div class="description-meta">
+                        <span class="description-year">2024</span>
+                        <span class="description-role" data-lang="role-lead">Lead Designer</span>
+                    </div>
+                </div>
+                
+                <div class="description-content">
+                    <p class="description-text" data-lang="project-1-text">
+                        A comprehensive redesign of an established e-commerce platform, focusing on improving user experience, 
+                        increasing conversion rates, and modernizing the visual design. The project involved extensive user research, 
+                        competitive analysis, and iterative design processes.
                     </p>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/yourprofile" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                        <a href="https://dribbble.com/yourprofile" class="social-link" target="_blank" rel="noopener" aria-label="Dribbble">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-2.17-.68-2.35-.72-.26-.08-.49-.12-.74.12-.16.14-.64.12-.64.12l.03-.48s.1-.03.11-.03c.18 0 .54.06.54.06l.69.18c0-.28-.04-.74-.16-1.2l-.46.18.38-1.5.6-.22s.04-.18.01-.28c0-.25-.64-.22-.64-.22h-.87l-.15.02s.09.42.09.47c0 .07-.01.09-.01.09h-.02l-.18-.03c-.42-.04-.78-.04-.78-.04s-.78.01-1.24.05l-.05-.95s.95-.23 2.11-.23c.75 0 1.4.23 1.4.23l-.09.98c.16.02.3.02.44.02l.09-.02-.15 1.4c-.19.92-.49 2.26-.49 2.26s-.17-.67-.56-.9z"/>
-                            </svg>
-                        </a>
-                        <a href="https://behance.net/yourprofile" class="social-link" target="_blank" rel="noopener" aria-label="Behance">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.561-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H13.96c.13 3.211 3.483 3.312 4.588 2.029h3.178zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 4.578-.853 5.06H0v-3.999h6.952z"/>
-                            </svg>
-                        </a>
-                        <a href="https://github.com/yourprofile" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <label for="name" class="form-label" data-lang="contact-name">Name</label>
-                        <input type="text" id="name" name="name" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label" data-lang="contact-email">Email</label>
-                        <input type="email" id="email" name="email" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject" class="form-label" data-lang="contact-subject">Subject</label>
-                        <input type="text" id="subject" name="subject" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label" data-lang="contact-message">Message</label>
-                        <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" data-lang="contact-send">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-text" data-lang="footer-text">
-                    © 2024 Your Name. All rights reserved.
-                </p>
-                <div class="footer-links">
-                    <a href="#home" class="footer-link" data-lang="footer-home">Home</a>
-                    <a href="#about" class="footer-link" data-lang="footer-about">About</a>
-                    <a href="#projects" class="footer-link" data-lang="footer-projects">Projects</a>
-                    <a href="#contact" class="footer-link" data-lang="footer-contact">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Project Modal -->
-    <div class="modal" id="project-modal">
-        <div class="modal-overlay" id="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" id="modal-close" aria-label="Close modal">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
-            <div class="modal-body">
-                <div class="modal-image">
-                    <div class="modal-placeholder">
-                        <svg width="600" height="400" viewBox="0 0 600 400" fill="none">
-                            <rect width="600" height="400" fill="var(--border-color)"/>
-                            <rect x="100" y="100" width="400" height="200" fill="var(--bg-tertiary)"/>
-                            <circle cx="300" cy="200" r="50" fill="var(--text-muted)"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="modal-info">
-                    <h2 class="modal-title" id="modal-title">Project Title</h2>
-                    <p class="modal-description" id="modal-description">Project description will be loaded here.</p>
-                    <div class="modal-details">
-                        <div class="modal-detail">
-                            <h4 data-lang="modal-role">Role</h4>
-                            <p id="modal-role">Product Designer</p>
+                    
+                    <div class="description-details">
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-challenges">Challenges</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-1-challenge-1">Complex legacy system with limited technical flexibility</li>
+                                <li data-lang="project-1-challenge-2">Diverse user base with varying technical expertise</li>
+                                <li data-lang="project-1-challenge-3">High competition in the e-commerce space</li>
+                            </ul>
                         </div>
-                        <div class="modal-detail">
-                            <h4 data-lang="modal-duration">Duration</h4>
-                            <p id="modal-duration">3 months</p>
+                        
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-solution">Solution</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-1-solution-1">Simplified navigation and checkout process</li>
+                                <li data-lang="project-1-solution-2">Responsive design optimized for all devices</li>
+                                <li data-lang="project-1-solution-3">Enhanced product discovery and filtering</li>
+                            </ul>
                         </div>
-                        <div class="modal-detail">
-                            <h4 data-lang="modal-tools">Tools</h4>
-                            <p id="modal-tools">Figma, Sketch, Principle</p>
+                        
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-outcomes">Outcomes</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-1-outcome-1">25% increase in conversion rate</li>
+                                <li data-lang="project-1-outcome-2">40% reduction in cart abandonment</li>
+                                <li data-lang="project-1-outcome-3">Improved user satisfaction scores</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="modal-challenges">
-                        <h4 data-lang="modal-challenges">Challenges</h4>
-                        <p id="modal-challenges-text">Challenges description will be loaded here.</p>
-                    </div>
-                    <div class="modal-outcomes">
-                        <h4 data-lang="modal-outcomes">Outcomes</h4>
-                        <p id="modal-outcomes-text">Outcomes description will be loaded here.</p>
+                    
+                    <div class="description-tools">
+                        <h4 class="tools-title" data-lang="tools-used">Tools Used</h4>
+                        <div class="tools-list">
+                            <span class="tool-tag">Figma</span>
+                            <span class="tool-tag">Sketch</span>
+                            <span class="tool-tag">InVision</span>
+                            <span class="tool-tag">Miro</span>
+                            <span class="tool-tag">Hotjar</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
+            <div class="project-description" id="project-2-description">
+                <div class="description-header">
+                    <h2 class="description-title" data-lang="project-2-title">Mobile Banking App</h2>
+                    <div class="description-meta">
+                        <span class="description-year">2023</span>
+                        <span class="description-role" data-lang="role-senior">Senior Designer</span>
+                    </div>
+                </div>
+                
+                <div class="description-content">
+                    <p class="description-text" data-lang="project-2-text">
+                        Design of a modern mobile banking application that prioritizes security, ease of use, and accessibility. 
+                        The app features advanced security measures, intuitive navigation, and comprehensive financial management tools.
+                    </p>
+                    
+                    <div class="description-details">
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-challenges">Challenges</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-2-challenge-1">Balancing security with user experience</li>
+                                <li data-lang="project-2-challenge-2">Complex financial data visualization</li>
+                                <li data-lang="project-2-challenge-3">Regulatory compliance requirements</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-solution">Solution</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-2-solution-1">Biometric authentication integration</li>
+                                <li data-lang="project-2-solution-2">Clear data visualization and charts</li>
+                                <li data-lang="project-2-solution-3">Accessible design patterns</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-outcomes">Outcomes</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-2-outcome-1">4.8/5 app store rating</li>
+                                <li data-lang="project-2-outcome-2">95% user retention rate</li>
+                                <li data-lang="project-2-outcome-3">Reduced support tickets by 30%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="description-tools">
+                        <h4 class="tools-title" data-lang="tools-used">Tools Used</h4>
+                        <div class="tools-list">
+                            <span class="tool-tag">Figma</span>
+                            <span class="tool-tag">Principle</span>
+                            <span class="tool-tag">Zeplin</span>
+                            <span class="tool-tag">UserTesting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-description" id="project-3-description">
+                <div class="description-header">
+                    <h2 class="description-title" data-lang="project-3-title">Healthcare Dashboard</h2>
+                    <div class="description-meta">
+                        <span class="description-year">2023</span>
+                        <span class="description-role" data-lang="role-ux">UX Designer</span>
+                    </div>
+                </div>
+                
+                <div class="description-content">
+                    <p class="description-text" data-lang="project-3-text">
+                        A comprehensive dashboard designed for healthcare professionals to efficiently manage patient data, 
+                        track analytics, and streamline clinical workflows. The interface prioritizes data clarity and quick access to critical information.
+                    </p>
+                    
+                    <div class="description-details">
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-challenges">Challenges</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-3-challenge-1">Complex medical data presentation</li>
+                                <li data-lang="project-3-challenge-2">Time-sensitive information access</li>
+                                <li data-lang="project-3-challenge-3">Integration with existing systems</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-solution">Solution</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-3-solution-1">Customizable dashboard widgets</li>
+                                <li data-lang="project-3-solution-2">Real-time data visualization</li>
+                                <li data-lang="project-3-solution-3">Role-based access control</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-outcomes">Outcomes</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-3-outcome-1">50% faster data access</li>
+                                <li data-lang="project-3-outcome-2">Reduced medical errors</li>
+                                <li data-lang="project-3-outcome-3">Improved staff efficiency</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="description-tools">
+                        <h4 class="tools-title" data-lang="tools-used">Tools Used</h4>
+                        <div class="tools-list">
+                            <span class="tool-tag">Figma</span>
+                            <span class="tool-tag">Adobe XD</span>
+                            <span class="tool-tag">Tableau</span>
+                            <span class="tool-tag">Sketch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-description" id="project-4-description">
+                <div class="description-header">
+                    <h2 class="description-title" data-lang="project-4-title">Travel Booking Platform</h2>
+                    <div class="description-meta">
+                        <span class="description-year">2022</span>
+                        <span class="description-role" data-lang="role-lead">Lead Designer</span>
+                    </div>
+                </div>
+                
+                <div class="description-content">
+                    <p class="description-text" data-lang="project-4-text">
+                        End-to-end design of a modern travel booking platform that simplifies the process of finding and booking 
+                        flights, hotels, and activities. The platform features advanced search capabilities and personalized recommendations.
+                    </p>
+                    
+                    <div class="description-details">
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-challenges">Challenges</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-4-challenge-1">Complex booking workflows</li>
+                                <li data-lang="project-4-challenge-2">Multiple service integrations</li>
+                                <li data-lang="project-4-challenge-3">Mobile-first responsive design</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-solution">Solution</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-4-solution-1">Streamlined booking process</li>
+                                <li data-lang="project-4-solution-2">Unified design system</li>
+                                <li data-lang="project-4-solution-3">Progressive web app features</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-outcomes">Outcomes</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-4-outcome-1">35% increase in bookings</li>
+                                <li data-lang="project-4-outcome-2">Improved mobile conversion</li>
+                                <li data-lang="project-4-outcome-3">Enhanced user satisfaction</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="description-tools">
+                        <h4 class="tools-title" data-lang="tools-used">Tools Used</h4>
+                        <div class="tools-list">
+                            <span class="tool-tag">Figma</span>
+                            <span class="tool-tag">Sketch</span>
+                            <span class="tool-tag">InVision</span>
+                            <span class="tool-tag">Framer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-description" id="project-5-description">
+                <div class="description-header">
+                    <h2 class="description-title" data-lang="project-5-title">Educational Platform</h2>
+                    <div class="description-meta">
+                        <span class="description-year">2022</span>
+                        <span class="description-role" data-lang="role-senior">Senior Designer</span>
+                    </div>
+                </div>
+                
+                <div class="description-content">
+                    <p class="description-text" data-lang="project-5-text">
+                        Design system and user interface for a comprehensive online learning platform that supports various 
+                        educational formats including video courses, interactive quizzes, and collaborative learning features.
+                    </p>
+                    
+                    <div class="description-details">
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-challenges">Challenges</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-5-challenge-1">Diverse learning styles and needs</li>
+                                <li data-lang="project-5-challenge-2">Scalable design system</li>
+                                <li data-lang="project-5-challenge-3">Engagement and retention</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-solution">Solution</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-5-solution-1">Modular design system</li>
+                                <li data-lang="project-5-solution-2">Interactive learning elements</li>
+                                <li data-lang="project-5-solution-3">Progress tracking features</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h4 class="detail-title" data-lang="detail-outcomes">Outcomes</h4>
+                            <ul class="detail-list">
+                                <li data-lang="project-5-outcome-1">80% course completion rate</li>
+                                <li data-lang="project-5-outcome-2">Reduced design development time</li>
+                                <li data-lang="project-5-outcome-3">Consistent user experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="description-tools">
+                        <h4 class="tools-title" data-lang="tools-used">Tools Used</h4>
+                        <div class="tools-list">
+                            <span class="tool-tag">Figma</span>
+                            <span class="tool-tag">Storybook</span>
+                            <span class="tool-tag">Principle</span>
+                            <span class="tool-tag">Miro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>

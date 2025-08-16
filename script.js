@@ -1,218 +1,261 @@
-// Language translations
+// Translation data
 const translations = {
     en: {
+        // Navigation
         'nav-home': 'Home',
         'nav-about': 'About',
-        'nav-skills': 'Skills',
-        'nav-projects': 'Projects',
         'nav-contact': 'Contact',
         'lang-en': 'EN',
         'lang-pt': 'PT',
-        'hero-greeting': 'Hello, I\'m',
-        'hero-tagline': 'Product Designer',
-        'hero-description': 'Creating meaningful digital experiences through user-centered design and innovative solutions.',
-        'hero-cta-primary': 'View My Work',
-        'hero-cta-secondary': 'Learn More',
-        'about-title': 'About Me',
-        'about-subtitle': 'Passionate about creating user-centered digital experiences',
-        'about-description': 'I\'m a product designer with over 5 years of experience crafting digital experiences that users love. My approach combines user research, strategic thinking, and creative problem-solving to deliver solutions that not only look great but also solve real user problems.',
-        'about-description-2': 'I believe in the power of design to create positive change and improve people\'s lives. Every project I work on is an opportunity to learn, grow, and make a meaningful impact.',
-        'about-experience': 'Experience',
-        'about-download-resume': 'Download Resume',
-        'timeline-1': 'Leading design initiatives for web and mobile applications',
-        'timeline-2': 'Designed user experiences for SaaS products',
-        'timeline-3': 'Created visual designs for various client projects',
-        'skills-title': 'Skills & Tools',
-        'skills-subtitle': 'Technologies and methodologies I work with',
-        'skills-design-tools': 'Design Tools',
-        'skills-ux': 'UX Skills',
-        'skills-soft': 'Soft Skills',
-        'projects-title': 'Featured Projects',
-        'projects-subtitle': 'A selection of my recent work',
-        'project-1-description': 'Redesigned the mobile shopping experience for a major retailer, improving conversion rates by 35%.',
-        'project-2-description': 'Created an intuitive dashboard for a B2B SaaS platform, reducing user onboarding time by 50%.',
-        'project-3-description': 'Modernized a financial app\'s interface, improving user engagement and trust scores significantly.',
-        'project-view-case': 'View Case Study',
-        'contact-title': 'Get In Touch',
-        'contact-subtitle': 'Let\'s work together on your next project',
-        'contact-info-title': 'Let\'s Connect',
-        'contact-description': 'I\'m always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!',
-        'contact-name': 'Name',
-        'contact-email': 'Email',
-        'contact-subject': 'Subject',
-        'contact-message': 'Message',
-        'contact-send': 'Send Message',
-        'footer-text': '© 2024 Your Name. All rights reserved.',
-        'footer-home': 'Home',
-        'footer-about': 'About',
-        'footer-projects': 'Projects',
-        'footer-contact': 'Contact',
-        'modal-role': 'Role',
-        'modal-duration': 'Duration',
-        'modal-tools': 'Tools',
-        'modal-challenges': 'Challenges',
-        'modal-outcomes': 'Outcomes'
+        
+        // Projects
+        'projects-title': 'Projects',
+        'projects-subtitle': 'Selected work and case studies',
+        
+        // Project titles
+        'project-1-title': 'E-commerce Redesign',
+        'project-2-title': 'Mobile Banking App',
+        'project-3-title': 'Healthcare Dashboard',
+        'project-4-title': 'Travel Booking Platform',
+        'project-5-title': 'Educational Platform',
+        
+        // Project descriptions
+        'project-1-description': 'Complete redesign of an e-commerce platform focusing on user experience and conversion optimization.',
+        'project-2-description': 'Design of a modern mobile banking application with focus on security and ease of use.',
+        'project-3-description': 'Comprehensive dashboard for healthcare professionals to manage patient data and analytics.',
+        'project-4-description': 'End-to-end design of a travel booking platform with advanced search and booking features.',
+        'project-5-description': 'Design system and user interface for an online learning platform with interactive features.',
+        
+        // Tags
+        'tag-ux': 'UX Design',
+        'tag-ui': 'UI Design',
+        'tag-research': 'Research',
+        'tag-mobile': 'Mobile',
+        'tag-fintech': 'Fintech',
+        'tag-prototyping': 'Prototyping',
+        'tag-dashboard': 'Dashboard',
+        'tag-healthcare': 'Healthcare',
+        'tag-analytics': 'Analytics',
+        'tag-travel': 'Travel',
+        'tag-booking': 'Booking',
+        'tag-responsive': 'Responsive',
+        'tag-education': 'Education',
+        'tag-design-system': 'Design System',
+        'tag-interactive': 'Interactive',
+        
+        // Roles
+        'role-lead': 'Lead Designer',
+        'role-senior': 'Senior Designer',
+        'role-ux': 'UX Designer',
+        
+        // Project details
+        'project-1-text': 'A comprehensive redesign of an established e-commerce platform, focusing on improving user experience, increasing conversion rates, and modernizing the visual design. The project involved extensive user research, competitive analysis, and iterative design processes.',
+        'project-2-text': 'Design of a modern mobile banking application that prioritizes security, ease of use, and accessibility. The app features advanced security measures, intuitive navigation, and comprehensive financial management tools.',
+        'project-3-text': 'A comprehensive dashboard designed for healthcare professionals to efficiently manage patient data, track analytics, and streamline clinical workflows. The interface prioritizes data clarity and quick access to critical information.',
+        'project-4-text': 'End-to-end design of a modern travel booking platform that simplifies the process of finding and booking flights, hotels, and activities. The platform features advanced search capabilities and personalized recommendations.',
+        'project-5-text': 'Design system and user interface for a comprehensive online learning platform that supports various educational formats including video courses, interactive quizzes, and collaborative learning features.',
+        
+        // Detail sections
+        'detail-challenges': 'Challenges',
+        'detail-solution': 'Solution',
+        'detail-outcomes': 'Outcomes',
+        'tools-used': 'Tools Used',
+        
+        // Project 1 details
+        'project-1-challenge-1': 'Complex legacy system with limited technical flexibility',
+        'project-1-challenge-2': 'Diverse user base with varying technical expertise',
+        'project-1-challenge-3': 'High competition in the e-commerce space',
+        'project-1-solution-1': 'Simplified navigation and checkout process',
+        'project-1-solution-2': 'Responsive design optimized for all devices',
+        'project-1-solution-3': 'Enhanced product discovery and filtering',
+        'project-1-outcome-1': '25% increase in conversion rate',
+        'project-1-outcome-2': '40% reduction in cart abandonment',
+        'project-1-outcome-3': 'Improved user satisfaction scores',
+        
+        // Project 2 details
+        'project-2-challenge-1': 'Balancing security with user experience',
+        'project-2-challenge-2': 'Complex financial data visualization',
+        'project-2-challenge-3': 'Regulatory compliance requirements',
+        'project-2-solution-1': 'Biometric authentication integration',
+        'project-2-solution-2': 'Clear data visualization and charts',
+        'project-2-solution-3': 'Accessible design patterns',
+        'project-2-outcome-1': '4.8/5 app store rating',
+        'project-2-outcome-2': '95% user retention rate',
+        'project-2-outcome-3': 'Reduced support tickets by 30%',
+        
+        // Project 3 details
+        'project-3-challenge-1': 'Complex medical data presentation',
+        'project-3-challenge-2': 'Time-sensitive information access',
+        'project-3-challenge-3': 'Integration with existing systems',
+        'project-3-solution-1': 'Customizable dashboard widgets',
+        'project-3-solution-2': 'Real-time data visualization',
+        'project-3-solution-3': 'Role-based access control',
+        'project-3-outcome-1': '50% faster data access',
+        'project-3-outcome-2': 'Reduced medical errors',
+        'project-3-outcome-3': 'Improved staff efficiency',
+        
+        // Project 4 details
+        'project-4-challenge-1': 'Complex booking workflows',
+        'project-4-challenge-2': 'Multiple service integrations',
+        'project-4-challenge-3': 'Mobile-first responsive design',
+        'project-4-solution-1': 'Streamlined booking process',
+        'project-4-solution-2': 'Unified design system',
+        'project-4-solution-3': 'Progressive web app features',
+        'project-4-outcome-1': '35% increase in bookings',
+        'project-4-outcome-2': 'Improved mobile conversion',
+        'project-4-outcome-3': 'Enhanced user satisfaction',
+        
+        // Project 5 details
+        'project-5-challenge-1': 'Diverse learning styles and needs',
+        'project-5-challenge-2': 'Scalable design system',
+        'project-5-challenge-3': 'Engagement and retention',
+        'project-5-solution-1': 'Modular design system',
+        'project-5-solution-2': 'Interactive learning elements',
+        'project-5-solution-3': 'Progress tracking features',
+        'project-5-outcome-1': '80% course completion rate',
+        'project-5-outcome-2': 'Reduced design development time',
+        'project-5-outcome-3': 'Consistent user experience'
     },
     pt: {
+        // Navigation
         'nav-home': 'Início',
         'nav-about': 'Sobre',
-        'nav-skills': 'Habilidades',
-        'nav-projects': 'Projetos',
         'nav-contact': 'Contato',
         'lang-en': 'EN',
         'lang-pt': 'PT',
-        'hero-greeting': 'Olá, eu sou',
-        'hero-tagline': 'Designer de Produto',
-        'hero-description': 'Criando experiências digitais significativas através de design centrado no usuário e soluções inovadoras.',
-        'hero-cta-primary': 'Ver Meus Trabalhos',
-        'hero-cta-secondary': 'Saiba Mais',
-        'about-title': 'Sobre Mim',
-        'about-subtitle': 'Apaixonado por criar experiências digitais centradas no usuário',
-        'about-description': 'Sou um designer de produto com mais de 5 anos de experiência criando experiências digitais que os usuários adoram. Minha abordagem combina pesquisa de usuário, pensamento estratégico e resolução criativa de problemas para entregar soluções que não apenas parecem ótimas, mas também resolvem problemas reais dos usuários.',
-        'about-description-2': 'Acredito no poder do design para criar mudanças positivas e melhorar a vida das pessoas. Cada projeto em que trabalho é uma oportunidade de aprender, crescer e causar um impacto significativo.',
-        'about-experience': 'Experiência',
-        'about-download-resume': 'Baixar Currículo',
-        'timeline-1': 'Liderando iniciativas de design para aplicações web e mobile',
-        'timeline-2': 'Desenvolveu experiências de usuário para produtos SaaS',
-        'timeline-3': 'Criou designs visuais para diversos projetos de clientes',
-        'skills-title': 'Habilidades & Ferramentas',
-        'skills-subtitle': 'Tecnologias e metodologias com as quais trabalho',
-        'skills-design-tools': 'Ferramentas de Design',
-        'skills-ux': 'Habilidades UX',
-        'skills-soft': 'Habilidades Interpessoais',
-        'projects-title': 'Projetos em Destaque',
-        'projects-subtitle': 'Uma seleção dos meus trabalhos recentes',
-        'project-1-description': 'Redesenhou a experiência de compra mobile para uma grande varejista, melhorando as taxas de conversão em 35%.',
-        'project-2-description': 'Criou um dashboard intuitivo para uma plataforma SaaS B2B, reduzindo o tempo de onboarding em 50%.',
-        'project-3-description': 'Modernizou a interface de um app financeiro, melhorando significativamente o engajamento e confiança dos usuários.',
-        'project-view-case': 'Ver Estudo de Caso',
-        'contact-title': 'Entre em Contato',
-        'contact-subtitle': 'Vamos trabalhar juntos no seu próximo projeto',
-        'contact-info-title': 'Vamos Conectar',
-        'contact-description': 'Sempre estou interessado em novas oportunidades e projetos emocionantes. Se você tem uma pergunta ou só quer dizer oi, sinta-se à vontade para entrar em contato!',
-        'contact-name': 'Nome',
-        'contact-email': 'Email',
-        'contact-subject': 'Assunto',
-        'contact-message': 'Mensagem',
-        'contact-send': 'Enviar Mensagem',
-        'footer-text': '© 2024 Seu Nome. Todos os direitos reservados.',
-        'footer-home': 'Início',
-        'footer-about': 'Sobre',
-        'footer-projects': 'Projetos',
-        'footer-contact': 'Contato',
-        'modal-role': 'Função',
-        'modal-duration': 'Duração',
-        'modal-tools': 'Ferramentas',
-        'modal-challenges': 'Desafios',
-        'modal-outcomes': 'Resultados'
+        
+        // Projects
+        'projects-title': 'Projetos',
+        'projects-subtitle': 'Trabalhos selecionados e estudos de caso',
+        
+        // Project titles
+        'project-1-title': 'Redesign E-commerce',
+        'project-2-title': 'App Bancário Mobile',
+        'project-3-title': 'Dashboard de Saúde',
+        'project-4-title': 'Plataforma de Viagens',
+        'project-5-title': 'Plataforma Educacional',
+        
+        // Project descriptions
+        'project-1-description': 'Redesign completo de uma plataforma e-commerce focando em experiência do usuário e otimização de conversão.',
+        'project-2-description': 'Design de um aplicativo bancário moderno com foco em segurança e facilidade de uso.',
+        'project-3-description': 'Dashboard abrangente para profissionais de saúde gerenciarem dados de pacientes e análises.',
+        'project-4-description': 'Design completo de uma plataforma de reservas de viagem com recursos avançados de busca e reserva.',
+        'project-5-description': 'Sistema de design e interface para uma plataforma de aprendizado online com recursos interativos.',
+        
+        // Tags
+        'tag-ux': 'UX Design',
+        'tag-ui': 'UI Design',
+        'tag-research': 'Pesquisa',
+        'tag-mobile': 'Mobile',
+        'tag-fintech': 'Fintech',
+        'tag-prototyping': 'Prototipagem',
+        'tag-dashboard': 'Dashboard',
+        'tag-healthcare': 'Saúde',
+        'tag-analytics': 'Analytics',
+        'tag-travel': 'Viagem',
+        'tag-booking': 'Reserva',
+        'tag-responsive': 'Responsivo',
+        'tag-education': 'Educação',
+        'tag-design-system': 'Design System',
+        'tag-interactive': 'Interativo',
+        
+        // Roles
+        'role-lead': 'Designer Líder',
+        'role-senior': 'Designer Sênior',
+        'role-ux': 'UX Designer',
+        
+        // Project details
+        'project-1-text': 'Um redesign abrangente de uma plataforma e-commerce estabelecida, focando na melhoria da experiência do usuário, aumento das taxas de conversão e modernização do design visual. O projeto envolveu extensa pesquisa de usuários, análise competitiva e processos de design iterativos.',
+        'project-2-text': 'Design de um aplicativo bancário mobile moderno que prioriza segurança, facilidade de uso e acessibilidade. O app apresenta medidas de segurança avançadas, navegação intuitiva e ferramentas abrangentes de gestão financeira.',
+        'project-3-text': 'Um dashboard abrangente projetado para profissionais de saúde gerenciarem eficientemente dados de pacientes, rastrear análises e otimizar fluxos de trabalho clínicos. A interface prioriza clareza de dados e acesso rápido a informações críticas.',
+        'project-4-text': 'Design completo de uma plataforma moderna de reservas de viagem que simplifica o processo de encontrar e reservar voos, hotéis e atividades. A plataforma apresenta recursos avançados de busca e recomendações personalizadas.',
+        'project-5-text': 'Sistema de design e interface para uma plataforma abrangente de aprendizado online que suporta vários formatos educacionais incluindo cursos em vídeo, questionários interativos e recursos de aprendizado colaborativo.',
+        
+        // Detail sections
+        'detail-challenges': 'Desafios',
+        'detail-solution': 'Solução',
+        'detail-outcomes': 'Resultados',
+        'tools-used': 'Ferramentas Utilizadas',
+        
+        // Project 1 details
+        'project-1-challenge-1': 'Sistema legado complexo com flexibilidade técnica limitada',
+        'project-1-challenge-2': 'Base de usuários diversa com expertise técnica variada',
+        'project-1-challenge-3': 'Alta competição no espaço e-commerce',
+        'project-1-solution-1': 'Processo de navegação e checkout simplificado',
+        'project-1-solution-2': 'Design responsivo otimizado para todos os dispositivos',
+        'project-1-solution-3': 'Descoberta e filtragem de produtos aprimoradas',
+        'project-1-outcome-1': '25% de aumento na taxa de conversão',
+        'project-1-outcome-2': '40% de redução no abandono de carrinho',
+        'project-1-outcome-3': 'Melhorias nos scores de satisfação do usuário',
+        
+        // Project 2 details
+        'project-2-challenge-1': 'Equilibrar segurança com experiência do usuário',
+        'project-2-challenge-2': 'Visualização complexa de dados financeiros',
+        'project-2-challenge-3': 'Requisitos de conformidade regulatória',
+        'project-2-solution-1': 'Integração de autenticação biométrica',
+        'project-2-solution-2': 'Visualização clara de dados e gráficos',
+        'project-2-solution-3': 'Padrões de design acessíveis',
+        'project-2-outcome-1': 'Avaliação 4.8/5 na app store',
+        'project-2-outcome-2': '95% de taxa de retenção de usuários',
+        'project-2-outcome-3': 'Redução de 30% nos tickets de suporte',
+        
+        // Project 3 details
+        'project-3-challenge-1': 'Apresentação complexa de dados médicos',
+        'project-3-challenge-2': 'Acesso a informações sensíveis ao tempo',
+        'project-3-challenge-3': 'Integração com sistemas existentes',
+        'project-3-solution-1': 'Widgets de dashboard personalizáveis',
+        'project-3-solution-2': 'Visualização de dados em tempo real',
+        'project-3-solution-3': 'Controle de acesso baseado em função',
+        'project-3-outcome-1': '50% de acesso mais rápido aos dados',
+        'project-3-outcome-2': 'Redução de erros médicos',
+        'project-3-outcome-3': 'Melhoria na eficiência da equipe',
+        
+        // Project 4 details
+        'project-4-challenge-1': 'Fluxos de trabalho de reserva complexos',
+        'project-4-challenge-2': 'Múltiplas integrações de serviços',
+        'project-4-challenge-3': 'Design responsivo mobile-first',
+        'project-4-solution-1': 'Processo de reserva simplificado',
+        'project-4-solution-2': 'Sistema de design unificado',
+        'project-4-solution-3': 'Recursos de progressive web app',
+        'project-4-outcome-1': '35% de aumento nas reservas',
+        'project-4-outcome-2': 'Melhoria na conversão mobile',
+        'project-4-outcome-3': 'Satisfação do usuário aprimorada',
+        
+        // Project 5 details
+        'project-5-challenge-1': 'Estilos e necessidades de aprendizado diversos',
+        'project-5-challenge-2': 'Sistema de design escalável',
+        'project-5-challenge-3': 'Engajamento e retenção',
+        'project-5-solution-1': 'Sistema de design modular',
+        'project-5-solution-2': 'Elementos de aprendizado interativos',
+        'project-5-solution-3': 'Recursos de rastreamento de progresso',
+        'project-5-outcome-1': '80% de taxa de conclusão de cursos',
+        'project-5-outcome-2': 'Redução no tempo de desenvolvimento de design',
+        'project-5-outcome-3': 'Experiência do usuário consistente'
     }
 };
 
-// Project data for modal
-const projectData = {
-    1: {
-        title: 'E-commerce Mobile App',
-        description: 'A comprehensive redesign of the mobile shopping experience for a major retailer, focusing on improving user engagement and conversion rates.',
-        role: 'Lead Product Designer',
-        duration: '4 months',
-        tools: 'Figma, Sketch, Principle, Maze',
-        challenges: 'The main challenge was to simplify the complex checkout process while maintaining all necessary functionality. We also needed to improve the product discovery experience and reduce cart abandonment rates.',
-        outcomes: 'Successfully improved conversion rates by 35%, reduced cart abandonment by 28%, and increased average session duration by 42%. The app received positive user feedback and improved App Store ratings.'
-    },
-    2: {
-        title: 'SaaS Dashboard',
-        description: 'Designed an intuitive and powerful dashboard for a B2B SaaS platform, enabling users to efficiently manage their business operations.',
-        role: 'UX/UI Designer',
-        duration: '3 months',
-        tools: 'Figma, Adobe XD, InVision, Hotjar',
-        challenges: 'The platform had complex data visualization requirements and needed to serve multiple user personas with different technical backgrounds. We had to balance simplicity with powerful functionality.',
-        outcomes: 'Reduced user onboarding time by 50%, increased feature adoption by 65%, and improved customer satisfaction scores. The dashboard became a key differentiator for the platform.'
-    },
-    3: {
-        title: 'Fintech App Redesign',
-        description: 'Modernized the interface of a financial application to improve user trust, engagement, and overall experience.',
-        role: 'Product Designer',
-        duration: '5 months',
-        tools: 'Figma, Sketch, After Effects, UserTesting',
-        challenges: 'Financial apps require high levels of trust and security perception. We needed to modernize the interface while maintaining the professional appearance and ensuring all security features were clearly communicated.',
-        outcomes: 'Significantly improved user engagement metrics, increased trust scores by 40%, and reduced support tickets by 35%. The redesign helped position the app as a modern, trustworthy financial tool.'
-    }
-};
-
-// Current language state
+// Current language
 let currentLanguage = 'en';
 
-// DOM elements
-const navbar = document.getElementById('navbar');
-const navMenu = document.getElementById('nav-menu');
-const navToggle = document.getElementById('nav-toggle');
+// DOM Elements
+const projectCards = document.querySelectorAll('.project-card');
+const projectImages = document.querySelectorAll('.project-image');
+const projectDescriptions = document.querySelectorAll('.project-description');
 const languageToggle = document.getElementById('language-toggle');
 const themeToggle = document.getElementById('theme-toggle');
-const projectModal = document.getElementById('project-modal');
-const modalOverlay = document.getElementById('modal-overlay');
-const modalClose = document.getElementById('modal-close');
-const contactForm = document.getElementById('contact-form');
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
-    initializeNavigation();
     initializeTheme();
     initializeLanguage();
-    initializeSmoothScrolling();
-    initializeProjectModals();
-    initializeContactForm();
-    initializeScrollEffects();
-    initializeAnimations();
+    initializeProjectSwitching();
+    initializeMobileMenu();
+    
+    // Set first project as active by default
+    switchProject('project-1');
 });
-
-// Navigation functionality
-function initializeNavigation() {
-    // Mobile menu toggle
-    navToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        navToggle.classList.toggle('active');
-    });
-
-    // Close mobile menu when clicking on a link
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
-        });
-    });
-
-    // Navbar scroll effect
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 100) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-
-    // Active navigation highlighting
-    const sections = document.querySelectorAll('section[id]');
-    const navItems = document.querySelectorAll('.nav-link');
-
-    window.addEventListener('scroll', function() {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.scrollY >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navItems.forEach(item => {
-            item.classList.remove('active');
-            if (item.getAttribute('href') === `#${current}`) {
-                item.classList.add('active');
-            }
-        });
-    });
-}
 
 // Theme switching functionality
 function initializeTheme() {
@@ -220,273 +263,242 @@ function initializeTheme() {
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.body.className = `${savedTheme}-mode`;
 
+    // Set initial state of theme toggle button
+    if (themeToggle) {
+        if (savedTheme === 'dark') {
+            themeToggle.classList.add('active');
+        } else {
+            themeToggle.classList.remove('active');
+        }
+    }
+}
+
+// Language switching functionality
+function initializeLanguage() {
+    // Check for saved language preference or default to English
+    const savedLanguage = localStorage.getItem('language') || 'en';
+    currentLanguage = savedLanguage;
+    updateLanguage();
+    
+    // Set initial state of language toggle
+    if (languageToggle) {
+        const enSpan = languageToggle.querySelector('[data-lang="lang-en"]');
+        const ptSpan = languageToggle.querySelector('[data-lang="lang-pt"]');
+        
+        if (currentLanguage === 'pt') {
+            enSpan.style.display = 'none';
+            ptSpan.style.display = 'inline';
+        } else {
+            enSpan.style.display = 'inline';
+            ptSpan.style.display = 'none';
+        }
+    }
+}
+
+// Project switching functionality
+function initializeProjectSwitching() {
+    projectCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const projectId = this.getAttribute('data-project');
+            switchProject(projectId);
+        });
+    });
+}
+
+// Switch to a specific project
+function switchProject(projectId) {
+    // Remove active class from all project cards
+    projectCards.forEach(card => {
+        card.classList.remove('active');
+    });
+    
+    // Remove active class from all project images
+    projectImages.forEach(image => {
+        image.classList.remove('active');
+    });
+    
+    // Remove active class from all project descriptions
+    projectDescriptions.forEach(description => {
+        description.classList.remove('active');
+    });
+    
+    // Add active class to selected project card
+    const selectedCard = document.querySelector(`[data-project="${projectId}"]`);
+    if (selectedCard) {
+        selectedCard.classList.add('active');
+    }
+    
+    // Add active class to selected project image
+    const selectedImage = document.getElementById(`${projectId}-image`);
+    if (selectedImage) {
+        selectedImage.classList.add('active');
+    }
+    
+    // Add active class to selected project description
+    const selectedDescription = document.getElementById(`${projectId}-description`);
+    if (selectedDescription) {
+        selectedDescription.classList.add('active');
+    }
+}
+
+// Mobile menu functionality
+function initializeMobileMenu() {
+    if (mobileMenuToggle && navMenu) {
+        mobileMenuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    }
+}
+
+// Update all text content based on current language
+function updateLanguage() {
+    const elements = document.querySelectorAll('[data-lang]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-lang');
+        if (translations[currentLanguage] && translations[currentLanguage][key]) {
+            element.textContent = translations[currentLanguage][key];
+        }
+    });
+}
+
+// Event Listeners
+if (languageToggle) {
+    languageToggle.addEventListener('click', function() {
+        currentLanguage = currentLanguage === 'en' ? 'pt' : 'en';
+        localStorage.setItem('language', currentLanguage);
+        updateLanguage();
+        
+        // Update language toggle display
+        const enSpan = this.querySelector('[data-lang="lang-en"]');
+        const ptSpan = this.querySelector('[data-lang="lang-pt"]');
+        
+        if (currentLanguage === 'pt') {
+            enSpan.style.display = 'none';
+            ptSpan.style.display = 'inline';
+        } else {
+            enSpan.style.display = 'inline';
+            ptSpan.style.display = 'none';
+        }
+    });
+}
+
+if (themeToggle) {
     themeToggle.addEventListener('click', function() {
         const currentTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         
         document.body.className = `${newTheme}-mode`;
         localStorage.setItem('theme', newTheme);
+        
+        this.classList.toggle('active');
     });
 }
 
-// Language switching functionality
-function initializeLanguage() {
-    languageToggle.addEventListener('click', function() {
-        currentLanguage = currentLanguage === 'en' ? 'pt' : 'en';
-        updateLanguage();
-        updateLanguageToggle();
-    });
-}
-
-function updateLanguage() {
-    const elements = document.querySelectorAll('[data-lang]');
-    elements.forEach(element => {
-        const key = element.getAttribute('data-lang');
-        if (translations[currentLanguage][key]) {
-            element.textContent = translations[currentLanguage][key];
+// Navigation link functionality
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Remove active class from all nav links
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        
+        // Add active class to clicked link
+        this.classList.add('active');
+        
+        // Close mobile menu if open
+        if (navMenu && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
         }
     });
-}
+});
 
-function updateLanguageToggle() {
-    const enSpan = languageToggle.querySelector('[data-lang="lang-en"]');
-    const ptSpan = languageToggle.querySelector('[data-lang="lang-pt"]');
-    
-    if (currentLanguage === 'en') {
-        enSpan.style.display = 'inline';
-        ptSpan.style.display = 'none';
-    } else {
-        enSpan.style.display = 'none';
-        ptSpan.style.display = 'inline';
-    }
-}
-
-// Smooth scrolling functionality
-function initializeSmoothScrolling() {
-    const links = document.querySelectorAll('a[href^="#"]');
-    
-    links.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            if (targetSection) {
-                const offsetTop = targetSection.offsetTop - 70; // Account for fixed navbar
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-}
-
-// Project modal functionality
-function initializeProjectModals() {
-    const projectCards = document.querySelectorAll('.project-card');
-    
-    projectCards.forEach(card => {
-        card.addEventListener('click', function() {
-            const projectId = this.getAttribute('data-project');
-            openProjectModal(projectId);
-        });
-    });
-
-    // Close modal events
-    modalOverlay.addEventListener('click', closeProjectModal);
-    modalClose.addEventListener('click', closeProjectModal);
-    
-    // Close modal with Escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && projectModal.classList.contains('active')) {
-            closeProjectModal();
-        }
-    });
-}
-
-function openProjectModal(projectId) {
-    const project = projectData[projectId];
-    if (!project) return;
-
-    // Update modal content
-    document.getElementById('modal-title').textContent = project.title;
-    document.getElementById('modal-description').textContent = project.description;
-    document.getElementById('modal-role').textContent = project.role;
-    document.getElementById('modal-duration').textContent = project.duration;
-    document.getElementById('modal-tools').textContent = project.tools;
-    document.getElementById('modal-challenges-text').textContent = project.challenges;
-    document.getElementById('modal-outcomes-text').textContent = project.outcomes;
-
-    // Show modal
-    projectModal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-function closeProjectModal() {
-    projectModal.classList.remove('active');
-    document.body.style.overflow = '';
-}
-
-// Contact form functionality
-function initializeContactForm() {
-    contactForm.addEventListener('submit', function(e) {
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const data = Object.fromEntries(formData);
-        
-        // Basic validation
-        if (!data.name || !data.email || !data.subject || !data.message) {
-            showNotification('Please fill in all fields.', 'error');
-            return;
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         }
-        
-        if (!isValidEmail(data.email)) {
-            showNotification('Please enter a valid email address.', 'error');
-            return;
-        }
-        
-        // Simulate form submission
-        showNotification('Thank you! Your message has been sent successfully.', 'success');
-        this.reset();
     });
-}
+});
 
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-function showNotification(message, type = 'info') {
-    // Create notification element
-    const notification = document.createElement('div');
-    notification.className = `notification notification-${type}`;
-    notification.textContent = message;
-    
-    // Style the notification
-    notification.style.cssText = `
-        position: fixed;
-        top: 100px;
-        right: 20px;
-        background: ${type === 'success' ? '#4CAF50' : type === 'error' ? '#f44336' : '#2196F3'};
-        color: white;
-        padding: 16px 24px;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        z-index: 3000;
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-        max-width: 300px;
-    `;
-    
-    document.body.appendChild(notification);
-    
-    // Animate in
-    setTimeout(() => {
-        notification.style.transform = 'translateX(0)';
-    }, 100);
-    
-    // Remove after 5 seconds
-    setTimeout(() => {
-        notification.style.transform = 'translateX(100%)';
-        setTimeout(() => {
-            document.body.removeChild(notification);
-        }, 300);
-    }, 5000);
-}
-
-// Scroll effects and animations
-function initializeScrollEffects() {
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-            }
-        });
-    }, observerOptions);
-    
-    // Observe elements for animation
-    const animateElements = document.querySelectorAll('.skill-category, .project-card, .timeline-item');
-    animateElements.forEach(el => {
-        observer.observe(el);
-    });
-}
-
-function initializeAnimations() {
-    // Add CSS for fade-in animation
-    const style = document.createElement('style');
-    style.textContent = `
-        .skill-category, .project-card, .timeline-item {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
+// Keyboard navigation support
+document.addEventListener('keydown', function(e) {
+    // Escape key to close mobile menu
+    if (e.key === 'Escape') {
+        if (navMenu && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
         }
-        
-        .skill-category.fade-in, .project-card.fade-in, .timeline-item.fade-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        .navbar.scrolled {
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
-        }
-        
-        .dark-mode .navbar.scrolled {
-            background: rgba(10, 10, 10, 0.98);
-        }
-        
-        .notification {
-            font-family: var(--font-primary);
-            font-weight: 500;
-        }
-    `;
-    document.head.appendChild(style);
-}
-
-// Utility functions
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-
-// Performance optimization: Debounce scroll events
-const debouncedScrollHandler = debounce(function() {
-    // Any additional scroll-based functionality can be added here
-}, 16);
-
-window.addEventListener('scroll', debouncedScrollHandler);
-
-// Export functions for potential external use
-window.PortfolioApp = {
-    changeLanguage: function(lang) {
-        currentLanguage = lang;
-        updateLanguage();
-        updateLanguageToggle();
-    },
-    toggleTheme: function() {
-        const currentTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
-        document.body.className = `${newTheme}-mode`;
-        localStorage.setItem('theme', newTheme);
-    },
-    openProject: function(projectId) {
-        openProjectModal(projectId);
     }
+    
+    // Arrow keys for project navigation
+    if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        const activeCard = document.querySelector('.project-card.active');
+        if (activeCard) {
+            const currentIndex = Array.from(projectCards).indexOf(activeCard);
+            let newIndex;
+            
+            if (e.key === 'ArrowUp') {
+                newIndex = currentIndex > 0 ? currentIndex - 1 : projectCards.length - 1;
+            } else {
+                newIndex = currentIndex < projectCards.length - 1 ? currentIndex + 1 : 0;
+            }
+            
+            const projectId = projectCards[newIndex].getAttribute('data-project');
+            switchProject(projectId);
+            
+            // Scroll to the new active card
+            projectCards[newIndex].scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest'
+            });
+        }
+    }
+});
+
+// Intersection Observer for fade-in animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
 };
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe elements for animation
+document.querySelectorAll('.project-card, .project-description').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+});
+
+// Handle window resize
+window.addEventListener('resize', function() {
+    // Close mobile menu on resize if screen becomes larger
+    if (window.innerWidth > 768 && navMenu && navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+    }
+});
+
+// Handle visibility change (when user switches tabs)
+document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+        // Pause any animations or timers when tab is not visible
+    } else {
+        // Resume animations when tab becomes visible again
+    }
+});
